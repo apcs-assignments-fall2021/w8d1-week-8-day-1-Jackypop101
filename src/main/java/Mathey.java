@@ -8,7 +8,14 @@ public class Mathey {
      * public static ...
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static int max(int x, int y) {
+        if (x>y){
+            return x;
+        }
+        else{
+            return y;
+        }
+    }
 
 
 
@@ -16,7 +23,14 @@ public class Mathey {
      * Ex. max(1, 4, 2) => 4
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static double max(double x, double y) {
+        if (x>y){
+            return x;
+        }
+        else{
+            return y;
+        }
+    }
 
 
 
@@ -24,7 +38,9 @@ public class Mathey {
      * Ex. max(1, 4, 2) => 4
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static int max(int x, int y, int z){
+        return max(x, max(y,z));
+    }
 
 
 
@@ -32,7 +48,9 @@ public class Mathey {
      * Ex. max(1.0, 4.25, 2.1) => 4.25
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static double max(double x, double y, double z, double w){
+        return max( w, max(x, max(y,z)));
+    }
 
 
 
@@ -44,7 +62,11 @@ public class Mathey {
      *     randomInteger(1, 4) => 4
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static int random_int(int x, int y){
+        int w = (int) (Math.random()*(y-x));
+        w += x;
+        return w;
+    }
 
 
 
@@ -56,14 +78,16 @@ public class Mathey {
      *     randomInteger(5) => 0
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
+    public static int random_int(int y) {
+        int w = (int) (Math.random() * (y - 0) + 1);
+        return w;
+
+
+    }
 
 
 
-
-
-
-
-    // YOU MAY WORK ON THE FOLLOWING METHODS IF YOU FINISH EARLY
+        // YOU MAY WORK ON THE FOLLOWING METHODS IF YOU FINISH EARLY
 
     /* Write a method that takes **two integers** and calculates the exponent
      * that you get by raising the first integer to the second integer
