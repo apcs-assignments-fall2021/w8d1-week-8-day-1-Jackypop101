@@ -96,7 +96,13 @@ public class Mathey {
      *     pow(3, 4) => 81
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static int pow(int x, int y) {
+        int w = x;
+        for (int i = 0; i < y-1; i++) {
+            x = x * w;
+        }
+        return x;
+    }
 
 
 
@@ -106,6 +112,12 @@ public class Mathey {
      *     abs(-2) => 2
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
+    public static int abs(int x) {
+        if (x < 0){
+            x *= -1;
+        }
+        return x;
+    }
 
 
 
@@ -117,6 +129,10 @@ public class Mathey {
      *     round(2.5) => 2
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
+    public static int round(double x) {
+        int y = (int) (x + 0.5);
+        return y;
+    }
 
 
 
@@ -131,7 +147,10 @@ public class Mathey {
      *     floor(2.999999999999) => 2
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static int floor(double x) {
+        int y = (int) x;
+        return y;
+    }
 
 
 
@@ -145,7 +164,10 @@ public class Mathey {
      *     ceil(3.01) => 4
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+    public static int ceiling (double x) {
+        int y = (int) (x + 1.0);
+        return y;
+    }
 
 
 

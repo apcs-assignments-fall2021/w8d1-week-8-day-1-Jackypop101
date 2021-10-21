@@ -8,8 +8,13 @@ public class MyMain {
     int y = x + 11;
         return y;
     }
+    public static double path (int a, int b) {
+        double w = Mathey.sqrt(Mathey.pow(a, 2) + Mathey.pow(b, 2));
+        return w;
+    }
 
-    // Use your previous method to generate three random numbers between 10 and 20, inclusive.
+
+        // Use your previous method to generate three random numbers between 10 and 20, inclusive.
     // Your program should print out the three numbers, as well as the largest and smallest
     // values of the three.
     // Example of running your code:
@@ -29,27 +34,45 @@ public class MyMain {
 
 //         // Uncomment this code later!
         System.out.println("Mathey.max tests");
-        System.out.println(Mathey.max(1, 2)); // 2
-        System.out.println(Mathey.max(2, 1)); // 2
+//        System.out.println(Mathey.max(1, 2)); // 2
+//        System.out.println(Mathey.max(2, 1)); // 2
+//
+//        System.out.println(Mathey.max(1.5, 2.5)); // 2.5
+//        System.out.println(Mathey.max(2.5, 1.5)); // 2.5
+//
+//        System.out.println(Mathey.max(1, 2, 3)); // 3
+//        System.out.println(Mathey.max(2, 1, 3)); // 3
+//        System.out.println(Mathey.max(3, 2, 1)); // 3
+//
+//        System.out.println(Mathey.max(1.5, 2.5, 3.5, 4.5)); // 4.5
+//        System.out.println(Mathey.max(2.5, 1.5, 3.5, 4.5)); // 4.5
+//        System.out.println(Mathey.max(4.5, 2.5, 1.5, 3.5)); // 4.5
+//
+//        System.out.println(Mathey.random_int(1, 5)); // 1-5
+//        System.out.println(Mathey.random_int(4, 8)); // 4-8
+//        System.out.println(Mathey.random_int(6, 20)); // 6-20
+//
+//        System.out.println(Mathey.random_int(6)); // 0-6
+//        System.out.println(Mathey.random_int( 20)); // 0-20
+//        System.out.println(Mathey.random_int(40)); // 0-40
 
-        System.out.println(Mathey.max(1.5, 2.5)); // 2.5
-        System.out.println(Mathey.max(2.5, 1.5)); // 2.5
+        System.out.println(Mathey.pow(2,3)); // 8
+        System.out.println(Mathey.pow(3,2)); // 9
 
-        System.out.println(Mathey.max(1, 2, 3)); // 3
-        System.out.println(Mathey.max(2, 1, 3)); // 3
-        System.out.println(Mathey.max(3, 2, 1)); // 3
 
-        System.out.println(Mathey.max(1.5, 2.5, 3.5, 4.5)); // 4.5
-        System.out.println(Mathey.max(2.5, 1.5, 3.5, 4.5)); // 4.5
-        System.out.println(Mathey.max(4.5, 2.5, 1.5, 3.5)); // 4.5
+        System.out.println(Mathey.abs( -20)); // 20
+        System.out.println(Mathey.abs( 20)); // 20
 
-        System.out.println(Mathey.random_int(1, 5)); // 1-5
-        System.out.println(Mathey.random_int(4, 8)); // 4-8
-        System.out.println(Mathey.random_int(6, 20)); // 6-20
+        System.out.println(Mathey.round(2.6)); // 3
+        System.out.println(Mathey.round(2.1)); // 2
 
-        System.out.println(Mathey.random_int(6)); // 0-6
-        System.out.println(Mathey.random_int( 20)); // 0-20
-        System.out.println(Mathey.random_int(40)); // 0-40
+        System.out.println(Mathey.floor(5.9)); // 5
+
+        System.out.println(Mathey.ceiling(5.9)); //6
+
+        System.out.println(path(5,12)); //13
+
+
 
     }
 
